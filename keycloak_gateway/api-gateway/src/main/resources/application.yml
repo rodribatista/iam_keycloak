@@ -13,7 +13,9 @@ spring:
             provider: keycloak-provider
             client-id: gateway-client
             client-secret: 1fb6iiRVdOUdJX08r3pAZ9nKRqjil5it
-            scope: openid
+            scope:
+              - openid
+              - publish
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8085/login/oauth2/code/keycloak
   cloud:
