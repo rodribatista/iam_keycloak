@@ -44,12 +44,12 @@ public class JwtAuthConverter implements Converter<Jwt, AbstractAuthenticationTo
     Set<GrantedAuthority> resourcesRoles = new HashSet();
     ObjectMapper objectMapper = new ObjectMapper();
     objectMapper.registerModule(new JavaTimeModule());
-    resourcesRoles.addAll(extractRoles("resource_access", objectMapper
-        .readTree(objectMapper.writeValueAsString(jwt)).get("claims")));
-    resourcesRoles.addAll(extractRolesRealmAccess("realm_access", objectMapper
-        .readTree(objectMapper.writeValueAsString(jwt)).get("claims")));
-    resourcesRoles.addAll(extractAud("aud", objectMapper
-        .readTree(objectMapper.writeValueAsString(jwt)).get("claims")));
+    resourcesRoles.addAll(extractRoles("resource_access",
+        objectMapper.readTree(objectMapper.writeValueAsString(jwt)).get("claims")));
+    resourcesRoles.addAll(extractRolesRealmAccess("realm_access",
+        objectMapper.readTree(objectMapper.writeValueAsString(jwt)).get("claims")));
+    resourcesRoles.addAll(extractAud("aud",
+        objectMapper.readTree(objectMapper.writeValueAsString(jwt)).get("claims")));
     return resourcesRoles;
   }
 

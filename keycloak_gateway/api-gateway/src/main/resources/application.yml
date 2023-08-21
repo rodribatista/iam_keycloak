@@ -6,13 +6,13 @@ spring:
     oauth2:
       client:
         provider:
-          api-gateway:
+          keycloak-provider:
             issuer-uri: http://localhost:8080/realms/dh_demo
         registration:
           api-gateway:
-            provider: api-gateway
+            provider: keycloak-provider
             client-id: gateway-client
-            client-secret: 45l7ceVPNFVDDT5dc9xgFde1nlFIOHMV
+            client-secret: 1fb6iiRVdOUdJX08r3pAZ9nKRqjil5it
             scope: openid
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8085/login/oauth2/code/keycloak
