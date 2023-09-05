@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KeycloakApplication2 {
+public class KeycloakClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KeycloakApplication2.class, args);
+		SpringApplication.run(KeycloakClientApplication.class, args);
 	}
 
 }
