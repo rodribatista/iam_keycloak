@@ -1,0 +1,14 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: keycloak-users
+
+dh:
+  keycloak:
+    # es una forma diferente de configurar un client
+    serverUrl: http://localhost:8080
+    realm: dh_users
+    clientId: users-client
+    clientSecret: V1yox6SP3HUYnTLsH5ddSckYsinQY77E
