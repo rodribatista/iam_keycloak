@@ -1,0 +1,3 @@
+insert into subscriptions(id, start_date,end_date,plan_id,user_id) values(1, '2023-01-15 17:30:00.000000','2022-04-03 23:59:00.000000',1,3)
+insert into subscriptions(id, start_date,end_date,plan_id,user_id) values(2, '2023-03-10 22:30:00.000000','2022-02-03 23:59:00.000000',2,1)
+insert into subscriptions(id, start_date,end_date,plan_id,user_id) values(3, '2023-08-20 20:00:00.000000','2022-02-03 23:59:00.000000',3,2)
